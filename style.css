@@ -3,6 +3,10 @@
   color: white;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background: #8990ec;
 }
