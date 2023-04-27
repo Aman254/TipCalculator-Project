@@ -42,7 +42,11 @@ const calculateBill = () => {
   const total = tipAmount + bill;
 
   // calculate the per person total (total divided by number of people)
-  const perPersonTotal = total / numberOfPeople;
+  let perPersonTotal = total / numberOfPeople;
+
+  if (isNaN(perPersonTotal)){
+    perPersonTotal = 0
+  }
 
   // update the perPersonTotal on DOM & show it to user
   perPersonTotalDiv.innerText = `$${perPersonTotal.toFixed(2)}`;
