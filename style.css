@@ -3,6 +3,10 @@
   color: white;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background: #8990ec;
 }
@@ -36,6 +40,19 @@ body {
   padding: 0 0.8rem;
   display: flex;
   align-items: center;
+}
+
+#alertPopUp {
+  font-size: 0.9rem;
+  background-color: #35395982;
+  z-index: 9999;
+  position: absolute;
+  width: 360px;
+  right: 10px;
+  top: 10px;
+  padding: 20px;
+  border-radius: 1.4rem;
+  display: none;
 }
 
 #billTotalInput,
